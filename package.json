@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbo",
     "clean": "rm -rf .next out",
-    "build": "next build && cp -r .next/*  Users/abdou/projects/tmp/remed-electron-app/remed-app-vite/dist/",
+    "build": "next build && cp -r .next/*  && bun run copy",
+    "copy": "Users/abdou/projects/tmp/remed-electron-app/remed-app-vite/dist/",
     "lint": "next lint"
   },
   "dependencies": {
