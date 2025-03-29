@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev --turbo",
     "clean": "rm -rf .next out",
-    "build": "next build && cp -r .next/*  Users/abdou/projects/tmp/remed-electron-app/remed-app-vite/dist/",
+    "build": "next build",
+    "copy": "cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
+    "standalone": "next build && bun run copy",
+    "start": "next start",
+    "start:standalone": "bun run .next/standalone/server.js",
     "lint": "next lint"
   },
   "dependencies": {
