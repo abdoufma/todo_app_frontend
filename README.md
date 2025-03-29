@@ -1,4 +1,4 @@
-The Frontend for the Example Todo App [`Example Todo App`](https://github.com/abdoufma/todo_app).
+The Frontend for the [`Example Todo App`](https://github.com/abdoufma/todo_app).
 Both are to be used with Remed's Electron shell.
 
 ## Getting Started
