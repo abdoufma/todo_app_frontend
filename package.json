@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev --turbo",
     "clean": "rm -rf .next out",
-    "build": "next build && bun run copy",
-    "copy": "cp -r .next/* /Users/abdou/projects/tmp/remed-electron-app/remed-app-vite/dist/",
+    "build": "next build --turbopack && bun run copy",
+    "copy": "cp -r out/* /Users/abdou/projects/tmp/remed-electron-app/remed-app-vite/dist/",
     "lint": "next lint"
   },
   "dependencies": {
@@ -17,7 +17,7 @@
     "clsx": "^2.1.1",
     "jotai": "^2.12.1",
     "lucide-react": "^0.477.0",
-    "next": "15.2.1",
+    "next": "^15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.0.2",
